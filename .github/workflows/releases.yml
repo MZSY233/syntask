@@ -17,9 +17,9 @@ jobs:
           distribution: 'temurin'
           cache: gradle
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x SynTask/gradlew
       - name: Build with Gradle
-        run: ./gradlew assembleDebug
+        run: ./SynTask/gradlew assembleDebug
       - name: Upload to Release Action
         uses: Shopify/upload-to-release@v1.0.1
         with:
